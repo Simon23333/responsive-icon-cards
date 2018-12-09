@@ -5,101 +5,94 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
+  box-sizing: border-box;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  box-sizing: border-box;
   font-family: sans-serif;
-  line-height: 1.3;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
-.cards {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.card-img img {
-  display: block;
-  width: 50px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .card-body h2 {
-  margin-top: .5em;
-  margin-bottom: 0;
+  font-size: 1.5rem;
   font-weight: normal;
+  margin-bottom: .25rem;
 }
 
 .card-body p {
+  line-height: 1.3;
+  margin-top: 0;
+}
+
+body {
+  margin: .75em;
+  margin-left: 0;
+  line-height: 1;
+}
+
+.cards {
+  list-style-type: none;
   margin: 0;
+  padding: 0;
+}
+
+.card-img {
+  width: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.7rem;
+}
+
+.card-img img {
+  width: 50px;
 }
 
 .card {
-  margin-top: .75em;
-  margin-bottom: 1.5em;
+  margin-left: .75em;
 }
 
 @media only screen and (min-width: 25em) {
-
-  .card-body {
-    display: inline-block;
-    width: 320px;
-    margin-bottom: 1.6em;
-  }
 
   .card-img {
     display: inline-block;
   }
 
-  .card {
-    margin: 0;
+  .card-body {
+    display: inline-block;
+    width: 75%;
   }
 
-  .card-body h2 {
-    margin: 0;
-    margin-left: .5em;
+  html {
+    line-height: 1.3;
+    margin-top: -1rem;
   }
 
-  .card-body p {
-    margin-left: .75em;
-  }
 }
 
 @media only screen and (min-width: 38em) {
 
-  html {
-    line-height: 1.4;
-    font-size: 110%;
-  }
-
-  .card {
-    display: inline-block;
-    width: 32%;
+  .card-body {
+    width: 150px;
   }
 
   .card-img {
     display: block;
   }
 
-  .card-body {
-    width: 100%;
-    margin-top: 1em;
+  .card {
+    display: inline-block;
   }
 
-  .card-body h2 {
-    margin: 0;
+  html {
+    font-size: 110%;
+    line-height: 1.4;
   }
 
-  .card-body p {
-    margin: 0;
-  }
 }
 
 @media only screen and (min-width: 60em) {
@@ -108,12 +101,13 @@ html {
     font-size: 120%;
     line-height: 1.5;
   }
+
 }
 
 @media only screen and (min-width: 90em) {
 
   html {
     font-size: 130%;
-    line-height: 1.6;
   }
+
 }
